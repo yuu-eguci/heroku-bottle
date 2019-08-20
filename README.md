@@ -3,7 +3,7 @@ heroku-bottle
 
 To practice deploying bottle app on heroku.
 
-## Installation
+## Required tools
 
 ### git
 
@@ -21,12 +21,22 @@ pipenv install --python 3.7
 pipenv shell
 ```
 
-### Others
-
 ```bash
 pipenv install bottle
 pip freeze > requirements.txt
 echo web: python app.py > Procfile
+```
+
+## Installation
+
+```bash
+pipenv install
+```
+
+## How to upload to Heroku
+
+```bash
+git push --force-with-lease heroku dev:master
 ```
 
 ## Open
