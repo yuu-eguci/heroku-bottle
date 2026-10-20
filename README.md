@@ -4,7 +4,7 @@ heroku-bottle
 Bottle アプリを Heroku へデプロイする練習用。
 
 - Docker: 対応!
-- Python: 3.15!
+- Python: 3.14!
 - Linter: Ruff!
 - Test: pytest!
 - Bottle 0.13
@@ -28,7 +28,7 @@ docker compose up --build
 Docker を使わずローカルで動かす場合:
 
 ```bash
-python3.15 -m venv .venv
+python3.14 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-dev.txt
 python app.py
